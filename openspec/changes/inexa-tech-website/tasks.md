@@ -50,15 +50,15 @@ Chain strategy: pending
 
 - [x] 3.1 Create `src/components/ui/ParticleBackground.tsx` — lazy R3F Canvas with instanced mesh particles
 - [x] 3.2 Create `src/components/ui/PageLoader.tsx` — Suspense fallback with loading animation
-- [ ] 3.3 Create `src/components/sections/Hero.tsx` — full-viewport, R3F particles, heading, subtitle, 2 CTAs
-- [ ] 3.4 Create `src/pages/Home.tsx` — compose all preview sections
+- [x] 3.3 Create `src/components/sections/Hero.tsx` — full-viewport, R3F particles, heading, subtitle, 2 CTAs
+- [x] 3.4 Create `src/pages/Home.tsx` — compose all preview sections
 
 ## Phase 4: Sections + Constants
 
-- [ ] 4.1 Create `src/constants/services.ts` — Service interface + 4 service entries
-- [ ] 4.2 Create `src/constants/team.ts` — TeamMember interface + placeholder members
-- [ ] 4.3 Create `src/constants/testimonials.ts` — Testimonial interface + sample data (social-media style)
-- [ ] 4.4 Create `src/constants/stats.ts` — Stat interface + placeholder numbers
+- [x] 4.1 Create `src/constants/services.ts` — Service interface + 4 service entries
+- [x] 4.2 Create `src/constants/team.ts` — TeamMember interface + placeholder members
+- [x] 4.3 Create `src/constants/testimonials.ts` — Testimonial interface + sample data (social-media style)
+- [x] 4.4 Create `src/constants/stats.ts` — Stat interface + placeholder numbers
 - [ ] 4.5 Create `src/config/contact.ts` — EmailJS TODO stubs
 - [ ] 4.6 Create `src/components/sections/Services.tsx` — 4-card grid, Lucide icons, stagger animation
 - [ ] 4.7 Create `src/components/sections/Products.tsx` — Mikui showcase, generic SVG logo, "En desarrollo" badge, parallax
