@@ -40,11 +40,11 @@ Chain strategy: pending
 
 ## Phase 2: Layout + UI Primitives
 
-- [ ] 2.1 Create `src/components/layout/Navbar.tsx` — fixed glassmorphism, nav links, hamburger (mobile), CTA
-- [ ] 2.2 Create `src/components/layout/Footer.tsx` — logo, description, quick links, social icons, copyright year
-- [ ] 2.3 Create `src/components/ui/Button.tsx` — primary (solid blue), ghost (border + gradient hover), tertiary (text + arrow)
-- [ ] 2.4 Create `src/components/ui/GlassCard.tsx` — raised glassmorphism tier (0.6 opacity, 20px blur, inner border, hover scale 1.02)
-- [ ] 2.5 Create `src/components/ui/SectionTitle.tsx` — Sora display heading with gradient text + subtitle
+- [x] 2.1 Create `src/components/layout/Navbar.tsx` — fixed glassmorphism, nav links, hamburger (mobile), CTA
+- [x] 2.2 Create `src/components/layout/Footer.tsx` — logo, description, quick links, social icons, copyright year
+- [x] 2.3 Create `src/components/ui/Button.tsx` — primary (solid blue), ghost (border + gradient hover), tertiary (text + arrow)
+- [x] 2.4 Create `src/components/ui/GlassCard.tsx` — raised glassmorphism tier (0.6 opacity, 20px blur, inner border, hover scale 1.02)
+- [x] 2.5 Create `src/components/ui/SectionTitle.tsx` — Sora display heading with gradient text + subtitle
 
 ## Phase 3: Hero + Home
 
