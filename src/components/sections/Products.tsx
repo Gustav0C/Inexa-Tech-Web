@@ -74,7 +74,7 @@ export default function Products() {
           {/* In-development badge */}
           <span className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary text-label-sm font-jetbrains">
             <span className="h-1.5 w-1.5 rounded-full bg-secondary animate-pulse" />
-            In Development
+            En desarrollo
           </span>
         </motion.div>
 

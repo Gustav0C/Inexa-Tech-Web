@@ -106,6 +106,24 @@
   *:focus:not(:focus-visible) {
     outline: none;
   }
+
+  /* Scrollbar styling for dark theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface-container-lowest);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-surface-container-high);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-surface-container-highest);
+  }
 }
 
 /* Glassmorphism utilities */
@@ -157,6 +175,28 @@
   .stagger-4 { animation-delay: 150ms; }
   .stagger-5 { animation-delay: 200ms; }
   .stagger-6 { animation-delay: 250ms; }
+
+  /* Responsive section padding */
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+  }
 }
 
 /* Reduced motion */

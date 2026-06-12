@@ -68,6 +68,17 @@ Chain strategy: pending
 
 ## Phase 5: Remaining Sections + Pages
 
+<<<<<<< HEAD:openspec/changes/archive/2026-06-12-inexa-tech-website/tasks.md
+- [x] 5.1 Create `src/components/sections/Team.tsx` — placeholder cards, 3D CSS-perspective hover
+- [x] 5.2 Create `src/components/sections/Testimonials.tsx` — carousel, autoplay, prev/next, star ratings
+- [x] 5.3 Create `src/components/sections/Contact.tsx` — React Hook Form + zod, sidebar info, EmailJS stubs
+- [x] 5.4 Create `src/pages/ServicesPage.tsx` — full Services section
+- [x] 5.5 Create `src/pages/ProductsPage.tsx` — full Products section
+- [x] 5.6 Create `src/pages/AboutPage.tsx` — full About section
+- [x] 5.7 Create `src/pages/TeamPage.tsx` — full Team section
+- [x] 5.8 Create `src/pages/ContactPage.tsx` — full Contact section
+- [x] 5.9 Create `src/pages/NotFound.tsx` — 404 page
+=======
 - [ ] 5.1 Create `src/components/sections/Team.tsx` — placeholder cards, 3D CSS-perspective hover
 - [ ] 5.2 Create `src/components/sections/Testimonials.tsx` — carousel, autoplay, prev/next, star ratings
 - [ ] 5.3 Create `src/components/sections/Contact.tsx` — React Hook Form + zod, sidebar info, EmailJS stubs
@@ -77,12 +88,13 @@ Chain strategy: pending
 - [ ] 5.7 Create `src/pages/TeamPage.tsx` — full Team section
 - [ ] 5.8 Create `src/pages/ContactPage.tsx` — full Contact section
 - [ ] 5.9 Create `src/pages/NotFound.tsx` — 404 page
+>>>>>>> origin/main:openspec/changes/inexa-tech-website/tasks.md
 
 ## Phase 6: Polish
 
-- [ ] 6.1 Create `src/hooks/useScrollAnimation.ts` — smooth scroll hook
-- [ ] 6.2 Create `src/hooks/useReducedMotion.ts` — accessibility hook
-- [ ] 6.3 Fine-tune responsive breakpoints (375px, 768px, 1024px, 1440px)
-- [ ] 6.4 Add aria-labels and semantic HTML to all sections
-- [ ] 6.5 Add meta tags and Open Graph to `index.html`
-- [ ] 6.6 Final animation timing adjustments (300ms ease-out, 50ms stagger)
+- [x] 6.1 Create `src/hooks/useScrollAnimation.ts` — smooth scroll hook
+- [x] 6.2 Create `src/hooks/useReducedMotion.ts` — accessibility hook
+- [x] 6.3 Fine-tune responsive breakpoints (375px, 768px, 1024px, 1440px)
+- [x] 6.4 Add aria-labels and semantic HTML to all sections
+- [x] 6.5 Add meta tags and Open Graph to `index.html`
+- [x] 6.6 Final animation timing adjustments (300ms ease-out, 50ms stagger)

@@ -44,7 +44,7 @@ export default function Contact() {
     },
   })
 
-  const onSubmit = async (_data: ContactFormData) => {
+  const onSubmit = async () => {
     setSending(true)
 
     // TODO: Replace with actual EmailJS send() call
