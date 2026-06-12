@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import PageLoader from './components/ui/PageLoader'
 
 // Lazy load page components
 const Home = lazy(() => import('./pages/Home'))
@@ -10,17 +11,6 @@ const AboutPage = lazy(() => import('./pages/AboutPage'))
 const TeamPage = lazy(() => import('./pages/TeamPage'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
-
-// Loading fallback component
-function PageLoader() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="animate-pulse text-on-surface-variant">
-        Cargando...
-      </div>
-    </div>
-  )
-}
 
 function App() {
   return (

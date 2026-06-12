@@ -48,8 +48,8 @@ Chain strategy: pending
 
 ## Phase 3: Hero + Home
 
-- [ ] 3.1 Create `src/components/ui/ParticleBackground.tsx` — lazy R3F Canvas with instanced mesh particles
-- [ ] 3.2 Create `src/components/ui/PageLoader.tsx` — Suspense fallback with loading animation
+- [x] 3.1 Create `src/components/ui/ParticleBackground.tsx` — lazy R3F Canvas with instanced mesh particles
+- [x] 3.2 Create `src/components/ui/PageLoader.tsx` — Suspense fallback with loading animation
 - [ ] 3.3 Create `src/components/sections/Hero.tsx` — full-viewport, R3F particles, heading, subtitle, 2 CTAs
 - [ ] 3.4 Create `src/pages/Home.tsx` — compose all preview sections
 
@@ -63,8 +63,8 @@ Chain strategy: pending
 - [ ] 4.6 Create `src/components/sections/Services.tsx` — 4-card grid, Lucide icons, stagger animation
 - [ ] 4.7 Create `src/components/sections/Products.tsx` — Mikui showcase, generic SVG logo, "En desarrollo" badge, parallax
 - [ ] 4.8 Create `src/components/sections/About.tsx` — mission/values cards, counter stats with animation
-- [ ] 4.9 Create `src/components/ui/CounterAnimated.tsx` — scroll-triggered count-up animation
-- [ ] 4.10 Create `src/components/ui/AnimatedCard.tsx` — GlassCard + Framer Motion whileHover + whileInView
+- [x] 4.9 Create `src/components/ui/CounterAnimated.tsx` — scroll-triggered count-up animation
+- [x] 4.10 Create `src/components/ui/AnimatedCard.tsx` — GlassCard + Framer Motion whileHover + whileInView
 
 ## Phase 5: Remaining Sections + Pages
 
