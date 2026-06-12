@@ -59,15 +59,16 @@ Chain strategy: pending
 - [x] 4.2 Create `src/constants/team.ts` — TeamMember interface + placeholder members
 - [x] 4.3 Create `src/constants/testimonials.ts` — Testimonial interface + sample data (social-media style)
 - [x] 4.4 Create `src/constants/stats.ts` — Stat interface + placeholder numbers
-- [x] 4.5 Create `src/config/contact.ts` — EmailJS TODO stubs
-- [x] 4.6 Create `src/components/sections/Services.tsx` — 4-card grid, Lucide icons, stagger animation
-- [x] 4.7 Create `src/components/sections/Products.tsx` — Mikui showcase, generic SVG logo, "En desarrollo" badge, parallax
-- [x] 4.8 Create `src/components/sections/About.tsx` — mission/values cards, counter stats with animation
+- [ ] 4.5 Create `src/config/contact.ts` — EmailJS TODO stubs
+- [ ] 4.6 Create `src/components/sections/Services.tsx` — 4-card grid, Lucide icons, stagger animation
+- [ ] 4.7 Create `src/components/sections/Products.tsx` — Mikui showcase, generic SVG logo, "En desarrollo" badge, parallax
+- [ ] 4.8 Create `src/components/sections/About.tsx` — mission/values cards, counter stats with animation
 - [x] 4.9 Create `src/components/ui/CounterAnimated.tsx` — scroll-triggered count-up animation
 - [x] 4.10 Create `src/components/ui/AnimatedCard.tsx` — GlassCard + Framer Motion whileHover + whileInView
 
 ## Phase 5: Remaining Sections + Pages
 
+<<<<<<< HEAD:openspec/changes/archive/2026-06-12-inexa-tech-website/tasks.md
 - [x] 5.1 Create `src/components/sections/Team.tsx` — placeholder cards, 3D CSS-perspective hover
 - [x] 5.2 Create `src/components/sections/Testimonials.tsx` — carousel, autoplay, prev/next, star ratings
 - [x] 5.3 Create `src/components/sections/Contact.tsx` — React Hook Form + zod, sidebar info, EmailJS stubs
@@ -77,6 +78,17 @@ Chain strategy: pending
 - [x] 5.7 Create `src/pages/TeamPage.tsx` — full Team section
 - [x] 5.8 Create `src/pages/ContactPage.tsx` — full Contact section
 - [x] 5.9 Create `src/pages/NotFound.tsx` — 404 page
+=======
+- [ ] 5.1 Create `src/components/sections/Team.tsx` — placeholder cards, 3D CSS-perspective hover
+- [ ] 5.2 Create `src/components/sections/Testimonials.tsx` — carousel, autoplay, prev/next, star ratings
+- [ ] 5.3 Create `src/components/sections/Contact.tsx` — React Hook Form + zod, sidebar info, EmailJS stubs
+- [ ] 5.4 Create `src/pages/ServicesPage.tsx` — full Services section
+- [ ] 5.5 Create `src/pages/ProductsPage.tsx` — full Products section
+- [ ] 5.6 Create `src/pages/AboutPage.tsx` — full About section
+- [ ] 5.7 Create `src/pages/TeamPage.tsx` — full Team section
+- [ ] 5.8 Create `src/pages/ContactPage.tsx` — full Contact section
+- [ ] 5.9 Create `src/pages/NotFound.tsx` — 404 page
+>>>>>>> origin/main:openspec/changes/inexa-tech-website/tasks.md
 
 ## Phase 6: Polish
 

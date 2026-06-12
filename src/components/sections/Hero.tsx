@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Button from '../ui/Button'
 
+// Lazy load the heavy R3F particle background
 const ParticleBackground = lazy(() => import('../ui/ParticleBackground'))
 
 const headingVariants = {

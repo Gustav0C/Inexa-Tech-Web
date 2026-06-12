@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-on-surface-variant font-inter leading-relaxed">
-              Soluciones tecnológicas de vanguardia para empresas que buscan
+              Soluciones tecnológicas de vanguardia para empresas que buscan 
               transformación digital y excelencia operativa.
             </p>
           </div>
@@ -92,16 +92,10 @@ export default function Footer() {
               © {currentYear} INEXA TECH. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6">
-              <a
-                href="#"
-                className="text-on-surface-variant hover:text-on-surface text-sm font-inter transition-colors"
-              >
+              <a href="#" className="text-on-surface-variant hover:text-on-surface text-sm font-inter transition-colors">
                 Política de Privacidad
               </a>
-              <a
-                href="#"
-                className="text-on-surface-variant hover:text-on-surface text-sm font-inter transition-colors"
-              >
+              <a href="#" className="text-on-surface-variant hover:text-on-surface text-sm font-inter transition-colors">
                 Términos de Uso
               </a>
             </div>

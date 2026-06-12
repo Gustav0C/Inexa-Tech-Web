@@ -1,37 +1,25 @@
-import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
 interface GlassCardProps {
-  children: ReactNode
+  children: React.ReactNode
   className?: string
-  hover?: boolean
-  /** Extra motion props forwarded to the wrapper */
-  motionProps?: Record<string, unknown>
+  hoverScale?: boolean
+  borderHighlight?: boolean
 }
 
-/**
- * Raised-tier glassmorphism card.
- *
- * Spec (DESIGN.md):
- *  - bg-surface-container/60, backdrop-blur-xl, border border-white/10
- *  - Hover: scale 1.02, shadow-lg shadow-primary/10
- *  - Transition: 300ms ease-out
- */
 export default function GlassCard({
   children,
   className = '',
-  hover = true,
-  motionProps,
+  hoverScale = true,
+  borderHighlight = true,
 }: GlassCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      className={`relative rounded-xl bg-white/5 backdrop-blur-glass border border-white/10 shadow-glass overflow-hidden ${
+        borderHighlight ? 'before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent' : ''
+      } ${className}`}
+      whileHover={hoverScale ? { scale: 1.02 } : undefined}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      whileHover={hover ? { scale: 1.02 } : undefined}
-      className={`rounded-xl bg-surface-container/60 backdrop-blur-xl border border-white/10 p-6 transition-shadow duration-300 ease-out hover:shadow-lg hover:shadow-primary/10 ${className}`}
-      {...motionProps}
     >
       {children}
     </motion.div>

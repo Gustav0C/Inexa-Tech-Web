@@ -33,6 +33,7 @@ function Particles() {
       particle.y += particle.speedY
       particle.z += particle.speedZ
 
+      // Wrap around bounds
       if (particle.x > 10) particle.x = -10
       if (particle.x < -10) particle.x = 10
       if (particle.y > 10) particle.y = -10
@@ -87,9 +88,7 @@ interface ParticleBackgroundProps {
   className?: string
 }
 
-export default function ParticleBackground({
-  className = '',
-}: ParticleBackgroundProps) {
+export default function ParticleBackground({ className = '' }: ParticleBackgroundProps) {
   return (
     <div className={`absolute inset-0 overflow-hidden ${className}`}>
       <GradientFallback />

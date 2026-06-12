@@ -1,36 +1,30 @@
-import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
+import GlassCard from './GlassCard'
 
 interface AnimatedCardProps {
-  children: ReactNode
+  children: React.ReactNode
   className?: string
-  /** Stagger index (0-based) — drives the entrance delay */
-  index?: number
+  delay?: number
 }
 
-/**
- * GlassCard wrapper with Framer Motion whileHover + whileInView.
- * Stagger delay = index * 50ms per DESIGN.md spec.
- */
 export default function AnimatedCard({
   children,
   className = '',
-  index = 0,
+  delay = 0,
 }: AnimatedCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{
-        duration: 0.3,
+        duration: 0.5,
         ease: 'easeOut',
-        delay: index * 0.05,
+        delay,
       }}
       whileHover={{ scale: 1.02 }}
-      className={`rounded-xl bg-surface-container/60 backdrop-blur-xl border border-white/10 p-6 transition-shadow duration-300 ease-out hover:shadow-lg hover:shadow-primary/10 ${className}`}
     >
-      {children}
+      <GlassCard className={className}>{children}</GlassCard>
     </motion.div>
   )
 }

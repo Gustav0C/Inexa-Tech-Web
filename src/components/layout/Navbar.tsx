@@ -26,9 +26,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  useEffect(() => {
-    setIsOpen(false)
-  }, [location.pathname])
+  const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
     <motion.nav
@@ -74,18 +72,16 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link to="/contacto">
-              <Button variant="primary" size="sm">
-                Contáctanos
-              </Button>
-            </Link>
+            <Button variant="primary" size="sm">
+              Contáctanos
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={toggleMenu}
             className="md:hidden p-2 text-on-surface-variant hover:text-on-surface transition-colors"
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -125,11 +121,9 @@ export default function Navbar() {
                 </motion.div>
               ))}
               <div className="pt-4">
-                <Link to="/contacto" onClick={() => setIsOpen(false)}>
-                  <Button variant="primary" size="md" className="w-full">
-                    Contáctanos
-                  </Button>
-                </Link>
+                <Button variant="primary" size="md" className="w-full">
+                  Contáctanos
+                </Button>
               </div>
             </div>
           </motion.div>
