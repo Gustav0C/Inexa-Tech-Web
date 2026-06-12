@@ -1,0 +1,48 @@
+project: Inexa-Tech-Web
+description: "INEXA TECH design system specification — dark-first, glassmorphism, electric blue accent. Tokens in DESIGN.md frontmatter."
+persistence:
+  mode: openspec
+  artifact_store: openspec
+strict_tdd: false
+stack:
+  type: design-system-spec
+  languages: [yaml, markdown]
+  framework: none
+  package_manager: none
+  build_tooling: none
+testing:
+  runner: none
+  framework: none
+  layers:
+    unit: false
+    integration: false
+    e2e: false
+  coverage:
+    available: false
+    command: ""
+  quality:
+    linter: { available: false, command: "" }
+    type_checker: { available: false, command: "" }
+    formatter: { available: false, command: "" }
+phase_rules:
+  proposal:
+    require_issue: true
+    max_scope_lines: 200
+  spec:
+    format: markdown
+    require_scenarios: true
+  design:
+    require_architecture: true
+    max_components: 10
+  tasks:
+    max_tasks: 20
+    require_test_plan: true
+  apply:
+    commit_strategy: work-unit
+    chained_pr: ask-always
+    review_budget: 400
+  verify:
+    require_coverage: false
+    require_all_tests_pass: true
+  archive:
+    sync_delta_specs: true
