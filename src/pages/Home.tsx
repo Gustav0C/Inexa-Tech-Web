@@ -1,21 +1,26 @@
 import { motion } from 'framer-motion'
+import Hero from '../components/sections/Hero'
+import Services from '../components/sections/Services'
+import Products from '../components/sections/Products'
+import About from '../components/sections/About'
+import Team from '../components/sections/Team'
+import Testimonials from '../components/sections/Testimonials'
+import Contact from '../components/sections/Contact'
 
 export default function Home() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex items-center justify-center"
     >
-      <div className="text-center">
-        <h1 className="text-display-lg font-sora text-on-surface mb-4">
-          INEXA TECH
-        </h1>
-        <p className="text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-          Soluciones tecnológicas de vanguardia para empresas que buscan innovar y escalar.
-        </p>
-      </div>
+      <Hero />
+      <Services />
+      <Products />
+      <About />
+      <Team />
+      <Testimonials />
+      <Contact />
     </motion.div>
   )
 }

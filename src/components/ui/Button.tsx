@@ -2,9 +2,11 @@ import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
 type ButtonVariant = 'primary' | 'ghost' | 'tertiary'
+type ButtonSize = 'sm' | 'md' | 'lg'
 
 interface ButtonProps {
   variant?: ButtonVariant
+  size?: ButtonSize
   children: ReactNode
   /** Show a loading spinner */
   loading?: boolean
@@ -22,6 +24,7 @@ interface ButtonProps {
  */
 export default function Button({
   variant = 'primary',
+  size = 'md',
   children,
   loading = false,
   className = '',
@@ -30,15 +33,21 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const base =
-    'inline-flex items-center justify-center gap-2 font-jetbrains text-label-md rounded-md transition-all duration-300 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+    'inline-flex items-center justify-center gap-2 font-jetbrains rounded-md transition-all duration-300 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+
+  const sizes: Record<ButtonSize, string> = {
+    sm: 'text-label-md px-4 py-2',
+    md: 'text-label-md px-6 py-3',
+    lg: 'text-body-md px-8 py-4',
+  }
 
   const variants: Record<ButtonVariant, string> = {
     primary:
-      'bg-secondary text-on-secondary px-6 py-3 hover:bg-secondary-container active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed',
+      'bg-secondary text-on-secondary hover:bg-secondary-container active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed',
     ghost:
-      'border border-outline text-on-surface px-6 py-3 hover:bg-gradient-to-b hover:from-surface-container-low hover:to-secondary-container/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed',
+      'border border-outline text-on-surface hover:bg-gradient-to-b hover:from-surface-container-low hover:to-secondary-container/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed',
     tertiary:
-      'text-on-surface-variant px-4 py-2 hover:text-secondary active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed',
+      'text-on-surface-variant hover:text-secondary active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed',
   }
 
   return (
@@ -46,7 +55,7 @@ export default function Button({
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.97 }}
       transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-      className={`${base} ${variants[variant]} ${className}`}
+      className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
       disabled={disabled || loading}
       type={type}
       onClick={onClick}
