@@ -3,71 +3,72 @@ export interface TeamMember {
   name: string
   role: string
   bio: string
-  photoUrl?: string
-  social: {
+  avatarUrl?: string
+  social?: {
     linkedin?: string
+    twitter?: string
     github?: string
   }
 }
 
-export const team: TeamMember[] = [
+export const teamMembers: TeamMember[] = [
   {
-    id: 'carlos-m',
-    name: 'Carlos Mendoza',
+    id: 'ceo',
+    name: 'Martín Echeverría',
     role: 'CEO & Founder',
-    bio: 'Visionary leader with 15+ years in enterprise technology and digital transformation.',
+    bio: 'Visionario tecnológico con 15+ años liderando transformaciones digitales en empresas Fortune 500.',
     social: {
-      linkedin: 'https://linkedin.com/in/',
-      github: 'https://github.com/',
+      linkedin: '#',
+      twitter: '#',
     },
   },
   {
-    id: 'laura-r',
-    name: 'Laura Rivera',
+    id: 'cto',
+    name: 'Luciana Torres',
     role: 'CTO',
-    bio: 'Systems architect passionate about scalable distributed platforms and developer experience.',
+    bio: 'Arquitecta de software especializada en sistemas distribuidos y arquitecturas cloud-native.',
     social: {
-      linkedin: 'https://linkedin.com/in/',
-      github: 'https://github.com/',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
-    id: 'diego-s',
-    name: 'Diego Soto',
-    role: 'Lead Engineer',
-    bio: 'Full-stack polyglot who writes clean, maintainable code and loves mentoring junior devs.',
+    id: 'lead-ai',
+    name: 'Sebastián Ruiz',
+    role: 'Head of AI',
+    bio: 'PhD en Machine Learning, investigador en NLP y autor de múltiples papers en conferences top-tier.',
     social: {
-      linkedin: 'https://linkedin.com/in/',
-      github: 'https://github.com/',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
-    id: 'maria-l',
-    name: 'María López',
-    role: 'AI & Data Lead',
-    bio: 'ML engineer specialized in NLP, computer vision, and production-grade AI pipelines.',
+    id: 'lead-cloud',
+    role: 'Cloud Architect',
+    name: 'Camila Herrera',
+    bio: 'AWS Solutions Architect Professional certificada. Ex-Amazon, especialista en migraciones masivas.',
     social: {
-      linkedin: 'https://linkedin.com/in/',
-      github: 'https://github.com/',
+      linkedin: '#',
     },
   },
   {
-    id: 'andres-t',
-    name: 'Andrés Torres',
-    role: 'DevOps Engineer',
-    bio: 'Infrastructure-as-code enthusiast focused on reliability, automation, and cloud cost optimization.',
+    id: 'head-security',
+    name: 'Federico López',
+    role: 'Head of Security',
+    bio: 'Especialista en ciberseguridad con experiencia en pentesting, response y compliance empresarial.',
     social: {
-      linkedin: 'https://linkedin.com/in/',
-      github: 'https://github.com/',
+      linkedin: '#',
+      twitter: '#',
     },
   },
   {
-    id: 'valentina-p',
-    name: 'Valentina Pérez',
-    role: 'UX Designer',
-    bio: 'Designs human-centered interfaces grounded in research, accessibility, and visual precision.',
+    id: 'head-data',
+    name: 'Valentina Morales',
+    role: 'Head of Data',
+    bio: 'Ingeniera de datos senior con expertise en DataOps, analytics engineering y visualización.',
     social: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: '#',
+      github: '#',
     },
   },
 ]

@@ -8,26 +8,26 @@ export interface Stat {
 export const stats: Stat[] = [
   {
     id: 'projects',
-    value: 150,
+    value: 120,
     suffix: '+',
-    label: 'Projects Delivered',
+    label: 'Proyectos entregados',
   },
   {
     id: 'clients',
-    value: 80,
+    value: 85,
     suffix: '+',
-    label: 'Enterprise Clients',
+    label: 'Clientes satisfechos',
   },
   {
     id: 'uptime',
     value: 99.9,
     suffix: '%',
-    label: 'Platform Uptime',
+    label: 'Uptime garantizado',
   },
   {
-    id: 'engineers',
-    value: 40,
+    id: 'experience',
+    value: 10,
     suffix: '+',
-    label: 'Engineers',
+    label: 'Años de experiencia',
   },
 ]

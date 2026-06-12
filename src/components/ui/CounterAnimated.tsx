@@ -2,57 +2,55 @@ import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'framer-motion'
 
 interface CounterAnimatedProps {
-  /** Target number to count up to */
-  end: number
-  /** Text appended after the number (e.g. "+", "%") */
+  target: number
   suffix?: string
-  /** Duration in ms */
+  label: string
   duration?: number
-  /** Number of decimal places */
-  decimals?: number
   className?: string
 }
 
-/**
- * Scroll-triggered count-up animation.
- * Starts counting when the element enters the viewport (once).
- */
 export default function CounterAnimated({
-  end,
+  target,
   suffix = '',
-  duration = 2000,
-  decimals = 0,
+  label,
+  duration = 2,
   className = '',
 }: CounterAnimatedProps) {
-  const ref = useRef<HTMLSpanElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, amount: 0.5 })
   const [count, setCount] = useState(0)
 
   useEffect(() => {
     if (!isInView) return
 
-    const steps = 60
-    const increment = end / steps
-    let current = 0
-    const stepDuration = duration / steps
+    const startTime = performance.now()
+    const durationMs = duration * 1000
 
-    const timer = setInterval(() => {
-      current += increment
-      if (current >= end) {
-        setCount(end)
-        clearInterval(timer)
-      } else {
-        setCount(Number(current.toFixed(decimals)))
+    function animate(currentTime: number) {
+      const elapsed = currentTime - startTime
+      const progress = Math.min(elapsed / durationMs, 1)
+
+      // Ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setCount(Math.floor(eased * target))
+
+      if (progress < 1) {
+        requestAnimationFrame(animate)
       }
-    }, stepDuration)
+    }
 
-    return () => clearInterval(timer)
-  }, [isInView, end, duration, decimals])
+    requestAnimationFrame(animate)
+  }, [isInView, target, duration])
 
   return (
-    <span ref={ref} className={className}>
-      {decimals > 0 ? count.toFixed(decimals) : Math.floor(count)}
-      {suffix}
-    </span>
+    <div ref={ref} className={`text-center ${className}`}>
+      <span className="font-sora font-bold text-display-sm md:text-headline-lg bg-gradient-to-b from-secondary to-primary bg-clip-text text-transparent">
+        {count}
+        {suffix}
+      </span>
+      <p className="mt-2 text-on-surface-variant font-inter text-body-md">
+        {label}
+      </p>
+    </div>
   )
 }

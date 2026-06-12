@@ -40,18 +40,18 @@ Chain strategy: pending
 
 ## Phase 2: Layout + UI Primitives
 
-- [ ] 2.1 Create `src/components/layout/Navbar.tsx` — fixed glassmorphism, nav links, hamburger (mobile), CTA
-- [ ] 2.2 Create `src/components/layout/Footer.tsx` — logo, description, quick links, social icons, copyright year
+- [x] 2.1 Create `src/components/layout/Navbar.tsx` — fixed glassmorphism, nav links, hamburger (mobile), CTA
+- [x] 2.2 Create `src/components/layout/Footer.tsx` — logo, description, quick links, social icons, copyright year
 - [x] 2.3 Create `src/components/ui/Button.tsx` — primary (solid blue), ghost (border + gradient hover), tertiary (text + arrow)
 - [x] 2.4 Create `src/components/ui/GlassCard.tsx` — raised glassmorphism tier (0.6 opacity, 20px blur, inner border, hover scale 1.02)
 - [x] 2.5 Create `src/components/ui/SectionTitle.tsx` — Sora display heading with gradient text + subtitle
 
 ## Phase 3: Hero + Home
 
-- [ ] 3.1 Create `src/components/ui/ParticleBackground.tsx` — lazy R3F Canvas with instanced mesh particles
-- [ ] 3.2 Create `src/components/ui/PageLoader.tsx` — Suspense fallback with loading animation
-- [ ] 3.3 Create `src/components/sections/Hero.tsx` — full-viewport, R3F particles, heading, subtitle, 2 CTAs
-- [ ] 3.4 Create `src/pages/Home.tsx` — compose all preview sections
+- [x] 3.1 Create `src/components/ui/ParticleBackground.tsx` — lazy R3F Canvas with instanced mesh particles
+- [x] 3.2 Create `src/components/ui/PageLoader.tsx` — Suspense fallback with loading animation
+- [x] 3.3 Create `src/components/sections/Hero.tsx` — full-viewport, R3F particles, heading, subtitle, 2 CTAs
+- [x] 3.4 Create `src/pages/Home.tsx` — compose all preview sections
 
 ## Phase 4: Sections + Constants
 
@@ -59,18 +59,18 @@ Chain strategy: pending
 - [x] 4.2 Create `src/constants/team.ts` — TeamMember interface + placeholder members
 - [x] 4.3 Create `src/constants/testimonials.ts` — Testimonial interface + sample data (social-media style)
 - [x] 4.4 Create `src/constants/stats.ts` — Stat interface + placeholder numbers
-- [x] 4.5 Create `src/config/contact.ts` — EmailJS TODO stubs
-- [x] 4.6 Create `src/components/sections/Services.tsx` — 4-card grid, Lucide icons, stagger animation
-- [x] 4.7 Create `src/components/sections/Products.tsx` — Mikui showcase, generic SVG logo, "En desarrollo" badge, parallax
-- [x] 4.8 Create `src/components/sections/About.tsx` — mission/values cards, counter stats with animation
+- [ ] 4.5 Create `src/config/contact.ts` — EmailJS TODO stubs
+- [ ] 4.6 Create `src/components/sections/Services.tsx` — 4-card grid, Lucide icons, stagger animation
+- [ ] 4.7 Create `src/components/sections/Products.tsx` — Mikui showcase, generic SVG logo, "En desarrollo" badge, parallax
+- [ ] 4.8 Create `src/components/sections/About.tsx` — mission/values cards, counter stats with animation
 - [x] 4.9 Create `src/components/ui/CounterAnimated.tsx` — scroll-triggered count-up animation
 - [x] 4.10 Create `src/components/ui/AnimatedCard.tsx` — GlassCard + Framer Motion whileHover + whileInView
 
 ## Phase 5: Remaining Sections + Pages
 
-- [x] 5.1 Create `src/components/sections/Team.tsx` — placeholder cards, 3D CSS-perspective hover
-- [x] 5.2 Create `src/components/sections/Testimonials.tsx` — carousel, autoplay, prev/next, star ratings
-- [x] 5.3 Create `src/components/sections/Contact.tsx` — React Hook Form + zod, sidebar info, EmailJS stubs
+- [ ] 5.1 Create `src/components/sections/Team.tsx` — placeholder cards, 3D CSS-perspective hover
+- [ ] 5.2 Create `src/components/sections/Testimonials.tsx` — carousel, autoplay, prev/next, star ratings
+- [ ] 5.3 Create `src/components/sections/Contact.tsx` — React Hook Form + zod, sidebar info, EmailJS stubs
 - [ ] 5.4 Create `src/pages/ServicesPage.tsx` — full Services section
 - [ ] 5.5 Create `src/pages/ProductsPage.tsx` — full Products section
 - [ ] 5.6 Create `src/pages/AboutPage.tsx` — full About section
